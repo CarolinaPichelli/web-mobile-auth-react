@@ -1,6 +1,6 @@
 # Portal de Notícias 📱
 
-Um aplicativo mobile de notícias com autenticação de usuários, construído com **React Native** e uma **API em Python/FastAPI**.
+Um aplicativo mobile de notícias com cadastro de usuários, construído com **React Native** e uma **API em Python/FastAPI**.
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react) 
 ![Expo](https://img.shields.io/badge/Expo-000000?style=flat&logo=expo) 
