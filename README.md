@@ -90,10 +90,11 @@ O servidor estará rodando em http://127.0.0.1:8000.
 
 ### Frontend (Aplicativo Mobile)
 
-1. Navegue até a pasta do frontend:
- ```bash
-cd caminho/para/seu/app-noticias
- ```
+1. Clone o repositório da API:
+```bash
+git clone https://github.com/CarolinaPichelli/web-mobile-auth-react.git
+cd web-mobile-auth-react
+```
 
 2. Instale as dependências:
  ```bash
