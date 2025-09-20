@@ -1,104 +1,122 @@
-<div align="center">
+# Portal de Notícias 📱
 
-Portal de Notícias 📱
-Um aplicativo mobile de notícias com autenticação de usuários, construído com React Native e uma API em Python/FastAPI.
+Um aplicativo mobile de notícias com autenticação de usuários, construído com **React Native** e uma **API em Python/FastAPI**.
 
-</div>
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react) 
+![Expo](https://img.shields.io/badge/Expo-000000?style=flat&logo=expo) 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python) 
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi)
 
-<p align="center">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/React_Native-20232A%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3D61DAFB" alt="Badge do React Native" />
-<img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Badge do Expo" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Python-3776AB%3Fstyle%3Dfor-the-badge%26logo%3Dpython%26logoColor%3Dwhite" alt="Badge do Python" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/FastAPI-005571%3Fstyle%3Dfor-the-badge%26logo%3Dfastapi%26logoColor%3Dwhite" alt="Badge do FastAPI" />
-</p>
 
-📝 Sobre o Projeto
-O objetivo deste projeto é criar um portal de notícias mobile completo, permitindo que usuários se cadastrem, façam login e interajam com o conteúdo. Após a autenticação, os usuários podem visualizar, criar e editar notícias em um feed dinâmico.
+### 👨‍💻👩‍💻 Integrantes do Grupo
 
-✨ Funcionalidades Implementadas
-[x] Autenticação de Usuários: Sistema de cadastro e login para acesso seguro.
+- Carolina Pichelli Souza
 
-[x] Feed de Notícias: Listagem de todas as notícias publicadas com "pull to refresh".
+- Fernando Alcantara D'Avila
 
-[x] Gerenciamento de Conteúdo (CRUD):
+- Guilherme Xavier Zanetti
 
-Criação: Adicionar novas notícias através de um formulário.
+- Heloísa Pichelli Souza
 
-Leitura: Visualizar a lista completa de notícias.
+- Lucas Batista de Sousa
 
-Atualização: Editar o título e o conteúdo de notícias existentes.
+- Nuno Kasuo Tronco Yokoji
 
-🛠️ Tecnologias Utilizadas
-Frontend (Aplicativo Mobile)
-React Native com Expo
+- Vivian de Oliveira Zanon
 
-Expo Router para navegação
+---
 
-Axios para comunicação com a API
+## 📝 Sobre o Projeto
+O objetivo deste projeto é criar um **portal de notícias mobile completo**, permitindo que usuários se cadastrem, façam login e interajam com o conteúdo. Após a autenticação, os usuários podem visualizar, criar e editar notícias em um feed dinâmico.
 
-TypeScript
+---
 
-Backend (API)
-Python
+## ✨ Funcionalidades Implementadas
+- ✅ **Autenticação de Usuários:** Cadastro e login seguro.
+- ✅ **Feed de Notícias:** Listagem de todas as notícias publicadas, com atualização dinâmica.
+- ✅ **Gerenciamento de Conteúdo (CRUD):**
+  - **Criação:** Adicionar novas notícias através de um formulário.
+  - **Leitura:** Visualizar a lista completa de notícias.
+  - **Atualização:** Editar o título e o conteúdo de notícias existentes.
 
-FastAPI para a construção da API
+---
 
-SQLite como banco de dados
+## 🛠️ Tecnologias Utilizadas
 
-🚀 Como Rodar o Projeto
-Siga os passos abaixo para configurar e executar o ambiente de desenvolvimento localmente.
+**Frontend (Aplicativo Mobile)**
+- React Native com Expo
+- Expo Router para navegação
+- Axios para comunicação com a API
+- TypeScript
 
-Pré-requisitos
-Node.js (versão LTS recomendada, ex: 20.x)
+**Backend (API)**
+- Python
+- FastAPI para construção da API
+- SQLite como banco de dados
+- Python-dotenv para variáveis de ambiente
 
-Python (versão 3.8 ou superior)
+---
 
-Um emulador Android/iOS configurado ou um dispositivo físico.
+## 🚀 Como Rodar o Projeto
 
-1. Backend (API em Python)
-Primeiro, inicie o servidor da API.
+### Pré-requisitos
+- Node.js (versão LTS recomendada, ex: 20.x)
+- Python (versão 3.8 ou superior)
+- Emulador Android/iOS configurado ou dispositivo físico
 
-# 1. Navegue até a pasta do backend
-cd caminho/para/seu/backend
+---
 
-# 2. Instale as dependências do Python
+### Backend (API em Python)
+
+1. Clone o repositório da API:
+```bash
+git clone https://github.com/zanettIno/web-mobile-auth-api.git
+cd web-mobile-auth-api
+```
+
+2. Instale as dependências:
+```bash
 pip install -r requirements.txt
+```
 
-# 3. Inicie o servidor da API
+3. Inicie o servidor da API:
+ ```bash
 uvicorn main:app --reload
+```
 
-O servidor estará rodando em http://12-7.0.0.1:8000. Deixe este terminal aberto.
+O servidor estará rodando em http://127.0.0.1:8000.
 
-2. Frontend (Aplicativo Mobile)
-Com o backend no ar, configure e inicie o aplicativo.
+---
 
-# 1. Em um NOVO terminal, navegue até a pasta do frontend
+### Frontend (Aplicativo Mobile)
+
+1. Navegue até a pasta do frontend:
+ ```bash
 cd caminho/para/seu/app-noticias
+ ```
 
-# 2. Instale as dependências do Node.js
+2. Instale as dependências:
+ ```bash
 npm install
+ ```
 
-# 3. Configure o endereço da API
-# Abra o arquivo `lib/api.ts` e ajuste a `baseURL`.
-# - Para Emulador Android: '[http://10.0.2.2:8000](http://10.0.2.2:8000)'
-# - Para Emulador iOS ou dispositivo físico na mesma rede: 'http://SEU_IP_LOCAL:8000'
+3. Configure o endereço da API no arquivo lib/api.ts:
+ ```bash
+// Para Emulador Android
+baseURL: 'http://10.0.2.2:8000'
 
-# 4. Inicie o aplicativo
+// Para Emulador iOS ou dispositivo físico na mesma rede
+baseURL: 'http://SEU_IP_LOCAL:8000'
+ ```
+
+4. Inicie o aplicativo:
+ ```bash
 npx expo start
+ ```
 
-Após iniciar, pressione a para abrir no emulador Android, i para o simulador iOS, ou escaneie o QR Code com o app Expo Go no seu celular.
+- Pressione a para abrir no emulador Android
 
-👨‍💻👩‍💻 Integrantes do Grupo
-Carolina Pichelli Souza
+- Pressione i para abrir no simulador iOS
 
-Fernando Alcantara D'Avila
+- Ou escaneie o QR Code com o app Expo Go no seu celular
 
-Guilherme Xavier Zanetti
-
-Heloísa Pichelli Souza
-
-Lucas Batista de Sousa
-
-Nuno Kasuo Tronco Yokoji
-
-Vivian de Oliveira Zanon
