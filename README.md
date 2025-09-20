@@ -116,7 +116,5 @@ npx expo start
 
 - Pressione a para abrir no emulador Android
 
-- Pressione i para abrir no simulador iOS
-
 - Ou escaneie o QR Code com o app Expo Go no seu celular
 
