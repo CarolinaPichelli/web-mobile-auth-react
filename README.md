@@ -74,6 +74,11 @@ git clone https://github.com/zanettIno/web-mobile-auth-api.git
 cd web-mobile-auth-api
 ```
 
+Ou utilize o link da API no Render (obs.: mantenha a API ligada em uma das suas de abas de navegador):
+```bash
+https://web-mobile-auth-api.onrender.com
+```
+
 2. Instale as dependências:
 ```bash
 pip install -r requirements.txt
@@ -90,7 +95,7 @@ O servidor estará rodando em http://127.0.0.1:8000.
 
 ### Frontend (Aplicativo Mobile)
 
-1. Clone o repositório da API:
+1. Clone o repositório do aplicativo:
 ```bash
 git clone https://github.com/CarolinaPichelli/web-mobile-auth-react.git
 cd web-mobile-auth-react
@@ -108,6 +113,9 @@ baseURL: 'http://10.0.2.2:8000'
 
 // Para Emulador iOS ou dispositivo físico na mesma rede
 baseURL: 'http://SEU_IP_LOCAL:8000'
+
+// Para utilizar a API disponibilizada pelo Render
+baseURL: 'https://web-mobile-auth-api.onrender.com'
  ```
 
 4. Inicie o aplicativo:
