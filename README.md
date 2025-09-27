@@ -74,11 +74,6 @@ git clone https://github.com/zanettIno/web-mobile-auth-api.git
 cd web-mobile-auth-api
 ```
 
-Ou utilize o link da API no Render (obs.: mantenha a API ligada em uma das suas de abas de navegador):
-```bash
-https://web-mobile-auth-api.onrender.com
-```
-
 2. Instale as dependências:
 ```bash
 pip install -r requirements.txt
@@ -91,6 +86,10 @@ uvicorn main:app --reload
 
 O servidor estará rodando em http://127.0.0.1:8000.
 
+Ou utilize o link da API no Render (obs.: mantenha a API ligada em uma das suas de abas de navegador):
+```bash
+https://web-mobile-auth-api.onrender.com
+```
 ---
 
 ### Frontend (Aplicativo Mobile)
